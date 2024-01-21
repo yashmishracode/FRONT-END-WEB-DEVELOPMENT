@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>interdocument navigation</title>
+</head>
+<style>
+  ul{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+  }
+</style>
+<body>
+  <ul>
+    <!-- Giving different kinf of navigation -->
+    <!--  1 . we can give links to another website  -->
+    <li><a href="http://amazon.in">Amazon</a></li>  
+    <!--  2. we can give links to images  -->
+    <li><a href="../assets/redmi9.png" target="_blank">Redmi - phone image in the next tab</a></li>
+    <!--  3 . we can give links to image in another window  -->
+    <li><a href="javascript:window.open('../assets/redmi9.png','Redmi','width=500px,height=200px')">Redmi - phone image in the next Windows</a></li>
+    <!--  3 . we can give links to download pdf  -->
+    <li><a href="../docs/mysql-cheat-sheet.pdf" download="MY_SQL pdf">Download Pdf of MY_SQL </a></li>
+    <!--  3 . we can give links to another one of your file  -->
+    <li>For any other page :-<a href="intradocument.html">Click Here For intradocument page</a></li>
+    <!--  3 . we can give links to the e_mail  -->
+    <li> Contact Us E_mail :-<a href="mailto:yash23256801@gmail.com">E_mail</a></li>
+    <!--  3 . we can give links to the phone   -->
+    <li>Contact Us Phone number :-<a href="tel:800*****58"> Phone number</a></li>
+    <!--  3 . we can give javascript functions in href  -->
+    <li>Test Code : <a href="javascript:alert('hello !')">Click here for POP UP message</a></li> 
+  </ul>
+  
+</body>
+</html>
