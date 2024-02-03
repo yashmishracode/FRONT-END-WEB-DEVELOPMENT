@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <style>
+      ul{
+        list-style: none;
+        margin-left: 10px;
+        border: 1px solid;
+        width: 200px;
+        height: 70px;
+        overflow: auto;
+        column-count: 2;
+      }
+      li{
+        margin-left: -35px;
+      }
+      #Terms{
+        height: 150px;
+        width: 300px;
+        background-color: lightgray;
+        overflow: auto;
+      }
+      #f2{
+        width: 300px;
+      }
+    </style>
+  </head>
+  <style>
+  </style>
+  <body>
+    <fieldset>
+      <legend>Registration</legend>
+      <form>
+        your E_mail :
+        <input type="email" name="txtemail">
+        <br><br>
+        url :
+        <input type="url" name="txturl">
+        <br><br>
+        colors in hexadecimal form :
+        <input type="color" name="txtcolor" value="#0000ff">
+        <br><br>
+        your  resume (only image/jpeg) :
+        <input type="file" name="txtimg" accept="image/jpeg" multiple>
+        <br><br>
+        choose gender:
+        <input type="radio" name="gender" checked>male
+        <input type="radio" name="gender" >female
+        <dl>
+          <dt>Courses</dt>
+          <dd>
+          <ul>
+            <li><input type="checkbox" name="html">HTML</li>
+            <li><input type="checkbox" name="html">CSS</li>
+            <li><input type="checkbox" name="html">JAVA</li>
+            <li><input type="checkbox" name="html">JAVA SCRIPT</li>
+            <li><input type="checkbox" name="html">C</li>
+            <li><input type="checkbox" name="html">C++</li>
+          </ul>
+        </dd>
+        </dl>
+        
+        <button> Submit</button>
+      </form>
+    </fieldset>
+    <fieldset id="f2">
+      <legend>Terms of Service</legend>
+      <div id="Terms">Depending on how you obtained the Windows software, this is a license agreement between (i) you and the device manufacturer or software installer that distributes the software with your device; or (ii) you and Microsoft Corporation (or, based on where you live or, if a business, where your principal place of business is located, one of its affiliates) if you acquired the software from a retailer. Microsoft is the device manufacturer for devices produced by Microsoft or one of its affiliates, and Microsoft is the retailer if you acquired the software directly from Microsoft. Note that if you are a volume license customer, use of this software is subject to your volume license agreement rather than this agreement.</div>
+      
+    </fieldset>
+    <div>
+      <input type="checkbox" name="accept"><span>I Accept</span>
+    </div>
+  </body>
+</html>
