@@ -26,10 +26,19 @@
       #f2{
         width: 300px;
       }
+      #accept+span{
+        color: red;
+      }
+      #accept:checked+span{
+        color: green;
+      }
+      meter{
+        height: 40px;
+        width: 50%;
+      }
     </style>
+     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
   </head>
-  <style>
-  </style>
   <body>
     <fieldset>
       <legend>Registration</legend>
@@ -51,28 +60,53 @@
         <input type="radio" name="gender" >female
         <dl>
           <dt>Courses</dt>
-          <dd>
-          <ul>
-            <li><input type="checkbox" name="html">HTML</li>
-            <li><input type="checkbox" name="html">CSS</li>
-            <li><input type="checkbox" name="html">JAVA</li>
-            <li><input type="checkbox" name="html">JAVA SCRIPT</li>
-            <li><input type="checkbox" name="html">C</li>
-            <li><input type="checkbox" name="html">C++</li>
-          </ul>
-        </dd>
+           <dd>
+            <ul>
+              <li><input type="checkbox" name="html">HTML</li>
+              <li><input type="checkbox" name="html">CSS</li>
+              <li><input type="checkbox" name="html">JAVA</li>
+              <li><input type="checkbox" name="html">JAVA SCRIPT</li>
+              <li><input type="checkbox" name="html">C</li>
+             <li><input type="checkbox" name="html">C++</li>
+           </ul>
+          </dd>
         </dl>
-        
-        <button> Submit</button>
-      </form>
+    </fieldset>
+    <fieldset>
+      <legend>dropdown</legend>
+      <select name="product">
+        <optgroup label="electronics">
+          <option value="jbl12" >JBL SOUNDS</option>
+          <option value="boat245" disabled>BOAT</option>
+        </optgroup>
+           <option value="t-shirt65">T-SHIRT</option>
+           <option value="sho454">SHORTS</option>
+           <option value="NILE3" selected>NIKE SHOES</option>
+           <option value="ADI53" >ADDIDAS SHOES</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>your comment</legend>
+         <textarea name="textarea"  cols="30" rows="10" >
+               terms and conditions
+         </textarea>
+    </fieldset>
+    <fieldset>
+      <legend>RATING METER</legend>
+        <meter min="1" max="100" value="100" name="RATING"></meter>good <br>
+        <meter min="1" max="100" value="100" low="20" high="80" name="RATING"></meter> average
+        <meter min="1" max="100" value="100" low="60" high="80" name="RATING"></meter> poor
     </fieldset>
     <fieldset id="f2">
       <legend>Terms of Service</legend>
-      <div id="Terms">Depending on how you obtained the Windows software, this is a license agreement between (i) you and the device manufacturer or software installer that distributes the software with your device; or (ii) you and Microsoft Corporation (or, based on where you live or, if a business, where your principal place of business is located, one of its affiliates) if you acquired the software from a retailer. Microsoft is the device manufacturer for devices produced by Microsoft or one of its affiliates, and Microsoft is the retailer if you acquired the software directly from Microsoft. Note that if you are a volume license customer, use of this software is subject to your volume license agreement rather than this agreement.</div>
+        <div id="Terms" name="txtread">Depending on how you obtained the Windows software, this is a license agreement between (i) you and the device manufacturer or software installer that distributes the software with your device; or (ii) you and Microsoft Corporation (or, based on where you live or, if a business, where your principal place of business is located, one of its affiliates) if you acquired the software from a retailer. Microsoft is the device manufacturer for devices produced by Microsoft or one of its affiliates, and Microsoft is the retailer if you acquired the software directly from Microsoft. Note that if you are a volume license customer, use of this software is subject to your volume license agreement rather than this agreement.</div>
       
     </fieldset>
-    <div>
-      <input type="checkbox" name="accept"><span>I Accept</span>
-    </div>
+      <div //class="form-check form-switch"//>
+        <input type="checkbox" //class="form-check-input"// id="accept" name="accept"><span>I Accept</span>
+      </div>
+        <br><br><br><br>
+          <button>Submit</button>
+   </form>
   </body>
 </html>
