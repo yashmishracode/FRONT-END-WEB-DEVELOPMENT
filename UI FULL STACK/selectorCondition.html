@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>styles</title>
+ <style>
+  a:link{
+    color: darkgreen;
+    text-decoration: none;
+  }
+  a:visited{
+    color: gray;
+  }
+  img {
+    width: 100px;
+    height: 100px;
+    transition: 2s;
+  }
+  img:hover {
+    width: 300px;
+    height: 300px;
+    transition: 2s;
+  }
+  input:focus {
+    border:3px solid red;
+  }
+  input[type="text"]+span{
+    display: none;
+  }
+  input[type="text"]:focus+span  {
+    display: inline;
+  }
+  #uname+span {
+    display: none;
+  }
+  #uname:focus+span{
+    display: inline;
+  }
+  div{
+    border: 2px solid;
+    background-color: lightgray;
+    margin-bottom: 10px;
+  }
+  div:target{
+    background-color: black;
+    color: white;
+  }
+  header{
+    margin-bottom: 10px;
+  }
+  button:enabled{
+    background-color: green;
+    color: white;
+    border: 1px solid;
+  }
+  button:disabled{
+    background-color:gray;
+    color: white;
+    cursor: not-allowed;
+  }
+ </style>
+</head>
+<body>
+ <a href="#" href="www.amazon.com">amazon</a>
+ <a href="#" href="www.yahoo.com">yahoo</a>
+ <a href="#" href="www.ebay.com">shopping</a>
+ <br>
+ <img src="../assets/shoes.avif" alt="shoes">
+ <br>
+ name: <input type="text">
+ <span>Name in block letters </span>
+ <br>
+ name: <input id="uname" type="text">
+ <span>Name in block letters through id</span>
+ <br>
+ <header>
+  <a href="#html" >HTML</a><span>|</span>
+  <a href="#css" >CSS</a><span>|</span>
+  <a href="#js" >Java Script</a>
+ </header>
+ <section>
+  <div id="html">
+    <h2>HTML</h2>
+    <p>it is markup language</p>
+  </div>
+  <div id="css">
+<h2>CSS</h2>
+<p>styles for html elements</p>
+  </div>
+  <div id="js">
+    <h2>JAVA script</h2>
+    <p>defines dynamic interactions</p>
+
+  </div>
+ </section>
+ <br>
+ <button disabled> Submit</button>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+ <style>
+  li:first-child{
+    color: red;
+  }
+  li:nth-child(4){
+    color: green;
+  }
+  /* pseudo element selector */
+  p::first-letter{
+    font-weight: bold;
+    font-size: 30px;
+  }
+  p::first-line{
+    font-style: italic;
+  }
+  ol{
+    list-style: none;
+    background: rgba(255,0,0, 0.4);  /*  you can see transperancy */
+  }
+  p{
+    background-color: rgba(0,255,200,0.3);
+
+  }
+  li::before{
+    content: "-->";
+  }
+  li:first-child::before{
+    content: "";
+  }
+  .main{
+    background-size:700px 400px;
+    background-image:url(../assets/women.webp);
+    
+   
+  }
+  #container{
+    color: white;
+    background-image:linear-gradient(red ,orange,rgba(0,255,0,0.1) )
+  }
+  
+ </style>
+</head>
+<body> 
+  <div class="main">
+  <div id="container">
+    <dt>User name</dt>
+    <dd><input type="text"></dd>
+    <dt>password</dt>
+    <dd><input type="password"></dd>
+  </div>
+  <ol>
+  <li>item-1</li>
+  <li>item-2</li>
+  <li>item-3</li>
+  <li>item-4</li>
+  <li>item-5</li>
+  <li>item-6</li>
+</ol>
+  <p>Limit of Liability/Disclaimer of Warranty: The publisher and the author make no representations or warranties with respect to the accuracy or completeness of the contents of this work and specifically disclaim all 
+    warranties, including without limitation warranties of fitness for a particular purpose. No warranty may be 
+    created or extended by sales or promotional materials. The advice and strategies contained herein may not 
+    be suitable for every situation. This work is sold with the understanding that the publisher is not engaged in 
+    rendering legal, accounting, or other professional services. If professional assistance is required, the services 
+    of a competent professional person should be sought. Neither the publisher nor the author shall be liable for 
+    damages arising herefrom. The fact that an organization or Web site is referred to in this work as a citation 
+    and/or a potential source of further information does not mean that the author or the publisher endorses 
+    the information the organization or website may provide or recommendations it may make. Further, readers 
+    should be aware that Internet websites listed in this work may have changed or disappeared between when 
+    this work was written and when it is read.</p>
+
+  </div>
+
+  
+</body>
+</html>
