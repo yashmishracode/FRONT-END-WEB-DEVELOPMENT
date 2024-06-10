@@ -3,9 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Login</title>
+  <style>
+    .toolbar{
+      border: 2px solid yellow;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .toolbar div{
+      display: inline;
+      margin-right: 20px;
+    }
+    .apple{
+      display: flex;
+      justify-content: center;
+     align-items: center;
+      height: 500px;
+    }
+    select,button{
+      width: 200px;
+      height: 25px;
+    }
+    select{
+      background-color: black;
+      color: white;
+    }
+    button{
+      background-color: aqua;
+      color: white;
+    }
+    .login{
+      border: 2px solid darkcyan;
+      border-radius: 30px;
+      padding: 20px;
+      width: 300px;
+      background-color: rgba(230, 230, 100, 0.8);
+    }
+    .container{
+      display: flex;
+      justify-content: center;
+      height: 500px;
+      align-items: center;
+    }
+    body{
+      background-image: url(../assets/shoes.avif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    }
+    
+  </style>
 </head>
 <body>
+  <div class="apple">
+    <div class="toolbar">
+      <div>
+      <select >
+        <option value="">Select city</option>
+      </select>
+    </div>
+    <div>
+      <select >
+        <option value="">Select time</option>
+      </select>
+    </div>
+    <div>
+      <select >
+        <option value="">Select show</option>
+      </select>
+    </div>
+    <div>
+      <select >
+        <option value="">Select date</option>
+      </select>
+    </div>
+      <button>Book Ticket</button>
+  </div>
+  </div>
+  <div class="container">
+    <div class="login">
+      <dl>
+        <dt>user name</dt>
+        <dd><input type="text"></dd>
+        <dt>Password</dt>
+        <dd><input type="password" ></dd>
+      </dl>
+        <button>Submit</button>
+    </div>
+  </div>
   
 </body>
 </html>
