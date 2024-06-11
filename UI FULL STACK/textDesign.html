@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>text deisgn</title>
+  <link rel="stylesheet" href="../font/css/all.css">
+  <style>
+    .container{
+      display: flex;
+    }
+    .hori{
+      border: 2px solid darkcyan;
+      padding: 20px;
+      width: 300px;
+      height: 200px;
+      writing-mode: horizontal-tb;/* it is default*/
+    }
+    .ver-RtoL{
+      border: 2px solid darkcyan;
+      padding: 20px;
+      width: 300px;
+      height: 200px;
+      writing-mode: vertical-lr;
+    }
+    .ver-LtoR{
+      border: 2px solid darkcyan;
+      padding: 20px;
+      width: 300px;
+      height: 200px;
+      writing-mode: vertical-rl;
+    }
+    ol{
+      list-style-type:circle;
+      list-style-image: url(../assets/boat.jpg);
+      list-style-position: inside ;
+    }
+    ul{
+      list-style: none;
+    }
+    ul li{
+      border: 2px solid black;
+      background-color: darkcyan;
+      width: 130px;
+      margin-bottom: 20px;
+      color: white;
+      padding: 20px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+    @media screen and (orientation: landscape) {
+  ul {
+    display: flex;
+  }
+  ul li {
+    margin-left: 30px;
+  }
+}
+@media screen and (orientation: portrait) {
+  ul {
+    display: block;
+    background-color: darkcyan;
+    width: 30px;
+    margin-left: -60px; 
+    transition: 1.5s; 
+  }
+  ul:hover {
+    margin-left: 0px;
+  }
+  .menu {
+    display: none;
+  }
+  ul li {
+    width: 20px;
+    border: none;
+  }
+}
+
+  </style>
+</head>
+<body>
+    <div class="container">
+      <div class="hori">
+        <h2>CSS Tutorial</h2>
+        <p>Learning CSS design now </p>
+      </div>
+      <div class="ver-RtoL">
+        <h2>CSS Tutorial</h2>
+        <p>Learning CSS design now </p>
+      </div>
+      <div class="ver-LtoR">
+        <h2>CSS Tutorial</h2>
+        <p>Learning CSS design now </p>
+      </div>
+    </div>
+    <ul>
+    <li><span class="fas fa-home"></span><span class="menu"> Home</span></li>
+    <li><span class="fas fa-globe"></span><span class="menu"> Network</span></li>
+    <li><span class="fas fa-envelope"></span><span class="menu"> Contact</span></li>
+    <li><span class="fab fa-facebook"></span><span class="menu"> Facebook</span></li>
+  </ul>
+    <br>
+    <ol>
+      <li>HTML</li>
+      <li class="a">CSS</li>
+      <li class="b">JS</li>
+      <li class="c">SQL</li>
+    </ol>
+</body>
+</html>
