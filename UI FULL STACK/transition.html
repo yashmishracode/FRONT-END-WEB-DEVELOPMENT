@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+   <style>
+    .box{
+      width: 50px;
+      height: 40px;
+      background-color: red;
+      transition-duration: 2s;
+    }
+    .box:hover{
+     width: 900px;
+     background-color: yellow;
+     transition-duration: 4s;
+     transition-delay: 2s; /* delay in transition */
+     /* transition-property: background-color;*/ /*  which effect you dont want  ot see  */
+     transition-timing-function: steps(10); /* these as readymade effects like animations in power point */
+    }
+   </style>
+</head>
+<body>
+  <div class="box">
+
+  </div>
+  
+</body>
+</html>

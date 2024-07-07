@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2D</title>
+  <style>
+   #a{
+      height: 300px;
+      width: 300px;
+      transform: translate(0px , 0px);
+      transition: 2s;
+    }
+    #a:hover{
+      transform: translate(300px , 500px);
+      transition: 2s;
+
+    }
+    #b{
+      height: 300px;
+      width: 300px;
+      transition: 2s;
+    }
+    #b:hover{
+      transform:rotate(180deg) ;
+      transition: 2s;
+
+    }
+    #c{
+      height: 300px;
+      width: 300px;
+      transition: 2s;
+    }
+    #c:hover{
+      transform:scale(2) ;
+      transition: 2s;
+
+    }
+    #d{
+      height: 300px;
+      width: 300px;
+      transition: 2s;
+    }
+    #d:hover{
+      transform:skew(20deg) ;
+      transition: 2s;
+
+    }
+    
+    span{
+      font-weight: bold;
+      font-size: 55px;
+    }
+  </style>
+</head>
+<body>
+  <span>translate</span>
+  <img  id="a" src="../assets/shoes.avif" >
+  <br>
+  <span>rotate</span>
+  <img id="b" src="../assets/boat.jpg" alt="">
+  <br>
+  <span>Scale</span>
+  <img id="c" src="../assets/clothing.jpg" alt="">
+  <br>
+  <span>Skew</span>
+  <img id="d" src="../assets/jewelry.jpg" alt="">
+
+</body>
+</html>

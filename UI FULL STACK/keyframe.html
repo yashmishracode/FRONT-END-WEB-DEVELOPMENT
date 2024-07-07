@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      overflow: hidden;
+    }
+    @keyframes slide{
+      from{
+        margin-left: 100%;
+      }
+      40%{
+        transform: scale(3);
+      }
+      70%{
+          transform: scale(1);
+        }
+      to{
+        margin-left: 0%;
+      }
+    }
+    @keyframes roll {
+      0% {
+        margin-left: 100%;
+        transform: rotate(0deg);
+      }
+      100%{
+        margin: 0%;
+        transform: rotate(360deg);
+      }
+    }
+    h2{
+      animation-name: slide;
+      animation-duration: 5s;
+     animation-iteration-count: infinite;
+    }
+    .a{
+      height: 100px;
+      width: 100px;
+      animation-name: roll ;
+     animation-duration: 5s;
+     animation-iteration-count: infinite;
+    }
+  </style>
+</head>
+<body>
+  <div class="conntainer">
+    <h2> Css animation  </h2>
+  </div>
+  <div >
+    <img class="a" src="../assets/speaker.jpg " >
+  </div>
+ 
+</body>
+</html>
