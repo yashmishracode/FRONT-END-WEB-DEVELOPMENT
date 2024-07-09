@@ -1,20 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
-</head>
-<body class="container-fluid">
-  <button data-bs-toggle="modal" data-bs-target="#login">Login</button>
-  <button>Register</button>
-     
-  <div class="model fade" id="login"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body class="container-fluid">
+    
+    <h2>Button Toolbar</h2>
+    
+    <div class="btn-toolbar bg-success justify-content-between">
+      
+       <!--Button Group-->
+    <div class="btn-group">
+    <button class="btn btn-primary">insert</button>
+    <button class="btn btn-info">Update</button>
+    <button class="btn btn-danger">Delete</button>
+    </div>
+    <h2>Buttons Group</h2>
+    <div class="btn-group">
+      <button class="btn btn-danger">Search</button>
+      <button class="btn btn-warning">Lola</button>
+    </div>  
+    </div>
+    <h2>Buttons</h2>
+    <button class="btn btn-danger btn-outline-success " data-bs-toggle="modal" data-bs-target="#login">Login</button>
+ <!--<a href="#register" data-bs-toggle="modal">Register</a>  -->   
+     <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#register">Register</button>
+ 
+      <h2>Block Button</h2>
+      <div class="d-grid">
+        <button class="btn btn-primary">About Us </button>
+      </div>
+
+      <!-- Login Model -->
+
+    <div class="modal fade" id="login">
+      <div class="modal-dialog modal-dialog-centered">  <!-- modal-fullscreen -->
+        <div class="modal-content">
+          <div class="modal-hedder bg-warning">
+            <h2>User Login</h2>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <dt>User Name</dt>
+            <dd><input type="text" name="" id=""></dd>
+            <dt>Password</dt>
+            <dd><input type="password " name="" id=""></dd>
+          </div>
+          <div class="modal-footer bg-warning">
+            <button class="btn btn-primary">Login</button>
+            <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- register modal -->
+
+    <div class="modal fade" id="register">
+      <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-headder bg-success">
+            <h2>User Login</h2>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <dl>
+              <dt>User Name</dt>
+              <dd><input type="text" name="" id=""></dd>
+              <dt>Password</dt>
+              <dd><input type="password" name="" id=""></dd>
+              <dt>User Name</dt>
+              <dd><input type="text" name="" id=""></dd>
+              <dt>Password</dt>
+              <dd><input type="password" name="" id=""></dd>
+              <dt>User Name</dt>
+              <dd><input type="text" name="" id=""></dd>
+              <dt>Password</dt>
+              <dd><input type="password" name="" id=""></dd>
+              <dt>User Name</dt>
+              <dd><input type="text" name="" id=""></dd>
+              <dt>Password</dt>
+              <dd><input type="password" name="" id=""></dd>
+              <dt>User Name</dt>
+              <dd><input type="text" name="" id=""></dd>
+              <dt>Password</dt>
+              <dd><input type="password" name="" id=""></dd>
+              <dt>User Name</dt>
+              <dd><input type="text" name="" id=""></dd>
+              <dt>Password</dt>
+              <dd><input type="password" name="" id=""></dd>
+              <dt>User Name</dt>
+              <dd><input type="text" name="" id=""></dd>
+              <dt>Password</dt>
+              <dd><input type="password" name="" id=""></dd>
+              <dt>User Name</dt>
+              <dd><input type="text" name="" id=""></dd>
+              <dt>Password</dt>
+              <dd><input type="password" name="" id=""></dd>
+            </dl>
+          </div>
+          <div class="modal-footer bg-success">
+            <button class="btn btn-primary">Register</button>
+            <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
-  <script src="../node_modules/jquery/dist/jquery.js"></script>
-  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-  
-</body>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
 </html>
