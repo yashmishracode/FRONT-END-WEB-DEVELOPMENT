@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>progress</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid">
+  <h2>HTML Progress</h2>
+  <Progress min="1" max="100" value="25"></Progress> 25%
+  <h2>Bootstrap Progress</h2>
+  <div class="progress">
+    <div class="progress-bar bg-primary" style="width: 50%;">
+      50% Downloaded
+    </div>
+  </div>
+  <h2>Multiple Progress</h2>
+  <div class="progress">
+    <div class="progress-bar bg-success" style="width: 30%;"> 30% Good</div>
+    <div class="progress-bar bg-danger" style="width: 50%;"> 50% Average</div>
+    <div class="progress-bar bg-warning" style="width: 20%;"> 20% poor</div>
+  </div>
+  <h2>Progress Bar Aanimated - Striped</h2>
+  <div class="progress">
+    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated " style="width: 30%;"> 30% Good</div>
+    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 50%;"> 50% Average</div>
+    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width: 20%;"> 20% poor</div>
+  </div>
+</body>
+</html>
