@@ -10,7 +10,17 @@
     />
     <script>
       function AddClick(){
-        document.getElementById("lN")
+        document.getElementById("lN").innerHTML = document.getElementById("txtName").value;
+        document.getElementById("lP").innerHTML = document.getElementById("txtPrice").value;
+        document.getElementById("lST").innerHTML = document.getElementById("Shipped").options[document.getElementById("Shipped").selectedIndex].text;
+        checkBox =  document.getElementById("InStock");
+        status = "";
+        if(checkBox.checked){
+          status = "Available";
+        }else{
+          status = "Out Of Stock"
+        }
+        document.getElementById("lS").innerHTML = status;
       }
     </script>
   </head>
@@ -45,8 +55,8 @@
                 <dt>Shipped To</dt>
                 <dd>
                   <select name="" id="Shipped" class="form-select">
-                    <option value="">Delhi</option>
-                    <option value="">Hyderabad</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Hyderabad">Hyderabad</option>
                   </select>
                 </dd>
                 <dt>In Stock</dt>
@@ -63,7 +73,7 @@
             </form>
           </div>
           <div class="modal-footer">
-            <button class="btn btn-primary" onclick="AddClick()">Add</button>
+            <button class="btn btn-primary" data-bs-dismiss="modal" onclick="AddClick()">Add</button>
             <button class="btn btn-danger" data-bs-dismiss="modal">
               Cancel
             </button>
