@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reference Technique</title>
+  <script>
+    function any(){
+      window.document.images[0].src="../assets/iphone.webp";
+      window.document.forms[0].elements[1].value="Register";<!--refering by DOM-->
+      fLogin.btnLogin.value="Login" <!--Refering by name -->
+      document.getElementById("pic").src="../assets/jewelry.jpg" <!--Referred by id -->
+
+    }
+  </script>
+</head>
+<body onload="any( )">
+  <div>
+    <img width="100" height="100" border="1">
+  </div>
+  <div>
+    <form > 
+      <h3>Register</h3>
+      User Name :
+      <input type="text">
+      <input type="button" >
+    </form>
+  </div>
+  <div>
+    <form name="fLogin"> 
+      <h3>Login</h3>
+      Email :
+      <input type="email" name="txtEmail">
+      <input type="button" name="btnLogin">
+    </form>
+  </div>
+  <div></div>
+  <img width="100" height="100" id="pic" border="1">
+</body>
+</html>
