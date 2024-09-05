@@ -1,0 +1,15 @@
+<script>
+  // Module scope // Declearing here makes them global variable 
+  var x = 10;
+  
+  const z = 50;
+  function f1() {
+    window.y = 20; // we can also make a variable global declaring it with window 
+    document.write("Function 1:- x=" + x + "<br> y = " +  y + "<br> z= " + z +"<br>");
+  }
+  function f2(){
+    document.write("Function 2:- x=" + x + "<br> y = " +  y + "<br> z=" + z );
+  } 
+  f1();
+  f2();
+</script>
