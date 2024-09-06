@@ -1,0 +1,57 @@
+<!-- <script>
+  function f1(){
+    var name = "apple ";
+    var price ;
+    if(price== undefined){
+      document.write(`name = ${name} `);
+    }
+    else { 
+      document.write(`name = ${name} <br> price = ${price}`);
+
+    }   
+}
+f1();
+</script> -->
+<!-- method -2   -->
+ <!-- <script>
+  function a(){
+    var name = "apple";
+    var price;
+    if(price){
+      document.write(`name = ${name} <br> price = ${price}`);
+    }
+    else{
+      document.write(`name = ${name} `);
+
+    }
+  }
+  a();
+ </script> -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function verify(){
+      var age = document.getElementById("txtAge").value;
+      var msg = document.getElementById("msg");
+      if(isNaN(age)){
+        msg.style.display="inline";
+      }
+      else{
+        msg.style.display="none";
+      }
+    }
+  </script>
+ </head>
+ <body>
+  <fieldset>
+    <legend>age</legend>
+    <input type="text" id="txtAge" onblur="verify()">
+    <span id="msg" style="display: none;">Age must be a number</span>
+  </fieldset>
+  
+ </body>
+ </html>
