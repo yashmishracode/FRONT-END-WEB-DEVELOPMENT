@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -23,5 +23,49 @@
     <button onclick="Submit()">Submit</button>
   </fieldset>
   
+</body>
+</html> -->
+
+
+<!-- MATCH EXPRESSION FOR PASSWORDS  -->
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+  <script>
+    function verify(){
+      var password = document.getElementById("txt").value; //taking value from txt
+      var msg = document.getElementById("msg"); // Referring to msg
+      var regExp = /(?=.*[A-Z])\w{4,15}/; // Password length must be between 4 to 15 characters 
+      if(password.match(regExp)){
+       msg.innerHTML="Strong Password";
+       msg.className="text-success";
+      }
+      else{
+        if(password.length<4){
+          msg.innerHTML="Poor Password";
+          msg.className="text-danger";
+        }
+        else {
+          msg.innerHTML="weak Password";
+          msg.className="text-warning";
+        }
+
+      }
+    }
+  </script>
+</head>
+<body class="container-fluid">
+  <fieldset>
+    <legend>Passsword</legend>
+    <input type="password" id="txt" onkeyup="verify()">
+    <span id="msg"></span>
+  </fieldset>
 </body>
 </html>
