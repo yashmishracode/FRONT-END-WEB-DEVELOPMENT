@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function Submit(){
+    var password = document.getElementById("txt").value;
+    if(password.length>10){
+      alert("Password must be less than 10 characters");
+    }
+    else{
+      document.write("Submitted Successfully");
+    }
+  }
+  </script>
+</head>
+<body>
+  <fieldset>
+    <legend>Login</legend>
+    <input type="password" id="txt">
+    <button onclick="Submit()">Submit</button>
+  </fieldset>
+  
+</body>
+</html>
