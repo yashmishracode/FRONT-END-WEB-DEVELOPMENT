@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+ <script>
+   function verify(){
+    var cardNumber = document.getElementById("card").value;
+    var img = document.getElementById("img");
+    if(cardNumber.startsWith("43")){
+      img.src="../assets/visa.jpg"
+    }
+    else{
+      img.src="../assets/mastercard.png"
+    }
+  }
+  function verifySite(){
+    var site = document.getElementById("Site").value;
+    var msg = document.getElementById("msg"); 
+    if(site.endsWith(".org")){
+      msg.innerHTML="Valid";
+    }
+    else {
+      msg.innerHTML="Invalid - only org Allowed";
+    }
+  }
+ </script>
+</head>
+<body class="container-fluid">
+  <h3>Payments</h3>
+  <div class="input-group">
+    <lable class="input-group-text">Card Number</lable>
+    <input type="text" class="form-control" id="card"  onkeyup="verify()">
+    <span class="input-group-text">
+      <img  id="img" height="30" width="100">
+    </span>
+  </div>
+  
+  <div class="input-group mt-3">
+    <lable class="input-group-text">Organization Site</lable>
+    <input type="text" class="form-control" id="Site"  onkeyup="verifySite()">
+    <span class="input-group-text" id="msg" ></span>
+  </div>
+</body>
+</html>
