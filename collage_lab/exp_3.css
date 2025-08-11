@@ -1,0 +1,45 @@
+nav {
+    background-color: #ffffff;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.container {
+    background-color: #e5eef9;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+span a {
+    color: blue;
+}
+
+section {
+    height: 700px;
+    overflow: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    cursor: pointer;
+    margin-bottom: 20px;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: tomato;
+    color: white;
+    padding: 5px;
+    width: 150px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
